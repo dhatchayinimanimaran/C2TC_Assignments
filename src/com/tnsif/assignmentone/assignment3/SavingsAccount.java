@@ -1,0 +1,34 @@
+package com.tnsif.assignmentone.assignment3;
+
+public class SavingsAccount {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 public SavingsAccount(String name, double balance) {
+		        super(name, balance);
+		    }
+
+		    @Override
+		    public void deposit(double amount) {
+		        balance += amount;
+		        balance += balance * interestRate;
+		        System.out.println("Deposited ₹" + amount + " with interest. New Balance: ₹" + balance);
+		    }
+
+		    @Override
+		    public void withdraw(double amount) {
+		        if (balance >= amount) {
+		            balance -= amount;
+		            System.out.println("Withdrew ₹" + amount + ". New Balance: ₹" + balance);
+		        } else {
+		            System.out.println("Insufficient balance!");
+		        }
+		    }
+
+		    @Override
+		    public double getBalance() {
+		        return balance;S
+
+	}
+
+}
